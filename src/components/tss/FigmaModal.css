@@ -1,0 +1,238 @@
+.preview-section {
+  background-image: url("/tss-assets/next.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+  padding: 60px 20px 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.preview-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: -1;
+}
+
+.preview-heading {
+  font-size: 40px;
+  color: #fabd60;
+  margin-bottom: 40px;
+}
+
+.preview-button {
+  font-size: 18px;
+  background: linear-gradient(135deg, #fabd60, #fff);
+  color: #000;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 20px #f9f87188;
+  transition: transform 0.3s ease;
+}
+
+.preview-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #f9f871aa;
+}
+
+.scroll-lock {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; 
+  z-index: 999;
+  overflow: hidden; 
+  padding-top: 40px;
+}
+
+.modal-content {
+  position: relative;
+  background: transparent;
+  border: 3px solid #f9f871;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #f9f87188;
+  width: 95%;
+  max-width: 420px;
+  max-height: 90vh;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.figma-frame {
+  width: 100%;
+  height: 80vh;
+  max-height: 650px;
+  border: none;
+  border-radius: 16px;
+  pointer-events: auto;
+  display: block;
+}
+.hardware-fullscreen {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+}
+.hide-header-and-scroll header {
+  display: none !important;
+}
+
+.hide-header-and-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.hardware-video-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hardware-video-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  pointer-events: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #f9f871;
+  color: #000;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.preview-button.secondary:hover {
+  box-shadow: 0 0 30px  #f9f871aa;
+}
+.video-loader {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f9f871;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .button-group {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes fadeOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .figma-frame {
+    width: 90vw;
+    height: 80vh;
+  }
+
+  .preview-heading {
+    font-size: 28px;
+  }
+
+  .preview-button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .figma-frame {
+    width: 100%;
+    height: 75vh;
+  }
+
+  .modal-content {
+    padding: 10px;
+  }
+
+  .close-button {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hardware-video-wrapper {
+    width: 100vw;
+    aspect-ratio: 9 / 16; 
+    border-radius: 0;
+  }
+}

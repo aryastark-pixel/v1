@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+.app-root {
+  width: 100%;
+  overflow-x: hidden;
+}
