@@ -1,4 +1,4 @@
-import{c as i,j as e,f as t,M as s}from"./Footer-DlUtJ0Ds.js";/**
+import{c as i,j as e,f as t,M as s}from"./Footer-Bkyugkq9.js";/**
  * @license lucide-react v0.525.0 - ISC
  *
  * This source code is licensed under the ISC license.

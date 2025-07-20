@@ -1,1 +1,0 @@
-import{d as r,j as e,e as s,B as t,H as o,F as a}from"./Footer-DlUtJ0Ds.js";import{T as d}from"./Team-D_djfAxx.js";r.createRoot(document.getElementById("root")).render(e.jsx(s.StrictMode,{children:e.jsxs(t,{children:[e.jsx(o,{}),e.jsx(d,{}),e.jsx(a,{})]})}));
