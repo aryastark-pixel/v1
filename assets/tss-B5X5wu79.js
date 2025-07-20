@@ -1,0 +1,1 @@
+import{d as s,j as e,e as o,B as r,H as t,F as a}from"./Footer-DlUtJ0Ds.js";import{H as d,B as j,F as x}from"./FigmaModal-DqfB7xdI.js";s.createRoot(document.getElementById("root")).render(e.jsx(o.StrictMode,{children:e.jsxs(r,{children:[e.jsx(t,{}),e.jsx(d,{}),e.jsx(j,{}),e.jsx(x,{}),e.jsx(a,{})]})}));
