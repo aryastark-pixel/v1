@@ -13,9 +13,11 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         portfolio: resolve(__dirname, 'portfolio.html'),
-        // Add more pages if needed
-        // about: resolve(__dirname, 'about.html'),
-        // team: resolve(__dirname, 'team.html'),
+        about: resolve(__dirname, 'about.html'),
+        team: resolve(__dirname, 'team.html'),
+        testimonials: resolve(__dirname, 'testimonials.html'),
+        contact: resolve(__dirname, 'contact.html'),
+        tss: resolve(__dirname, 'tss.html'),
       },
     },
   },   

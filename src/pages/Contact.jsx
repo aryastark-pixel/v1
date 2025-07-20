@@ -81,7 +81,7 @@ const Contact = () => {
                 {
                   icon: <Mail className="h-6 w-6 text-blue-200" />,
                   title: "Email us",
-                  content: "info@shapeit.in"
+                  content: "shapeit.india@gmail.com"
                 }
               ].map((item, index) => (
                 <div key={index} className="flex items-start">
