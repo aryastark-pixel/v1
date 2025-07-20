@@ -58,12 +58,12 @@ const Header = () => {
                 {item}
               </Link>
             ))}
-            <Link
+            {/* <Link
               href="/tss"
               className="bg-blue-600 text-white border border-blue-600 hover:bg-blue-700 px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ease-in-out transform hover:scale-105"
             >
               Our Product
-            </Link>
+            </Link> */}
           </nav>
 
           <button
