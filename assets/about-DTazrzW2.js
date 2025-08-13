@@ -1,1 +1,0 @@
-import{d as s,j as e,e as r,B as o,H as t,F as a}from"./Footer-Bkyugkq9.js";import{A as c}from"./About-B1pSKnIL.js";s.createRoot(document.getElementById("root")).render(e.jsx(r.StrictMode,{children:e.jsx(o,{children:e.jsxs("div",{className:"min-h-screen flex flex-col",children:[e.jsx(t,{}),e.jsx(c,{}),e.jsx(a,{})]})})}));
