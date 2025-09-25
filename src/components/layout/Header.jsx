@@ -47,7 +47,7 @@ const Header = () => {
             >
               Services
             </Link>
-            {['Portfolio', 'About', 'Team', 'Testimonials', 'Contact'].map((item) => (
+            {['Portfolio', 'About', 'Testimonials', 'Contact'].map((item) => (
               <Link
                 key={item}
                 href={`/${item.toLowerCase()}`}
@@ -100,7 +100,7 @@ const Header = () => {
             </button>
           </div>
           <nav className="flex flex-col space-y-6">
-            {['Services', 'Portfolio', 'About', 'Team', 'Testimonials', 'Contact'].map((item) => (
+            {['Services', 'Portfolio', 'About', 'Testimonials', 'Contact'].map((item) => (
               <Link
                 key={item}
                 href={item === 'Services' ? '/#services' : `/${item.toLowerCase()}`}

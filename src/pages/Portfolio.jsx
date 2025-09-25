@@ -2,49 +2,76 @@ import React, { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
 
 const projects = [
-  {
-    id: '1',
-    title: 'Detan Finance',
-    category: 'Web Application',
-    image: 'https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    description: 'A comprehensive dashboard for financial SIP and Mutual Funds data visualization',
-    tags: ['React.tsx', 'Tailwindcss', 'Python'],
-    caseStudyUrl: 'https://www.detan.in'
-  },
+  // {
+  //   id: '1',
+  //   title: 'Hospital Management System',
+  //   category: 'Hospital Management System',
+  //   image: 'https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  //   description: 'A secure database management system transiting data across many users',
+  //   url: '/hms',
+  // },
   {
     id: '2',
-    title: 'Business Platform',
-    category: 'Web Application',
-    image: 'https://images.pexels.com/photos/577210/pexels-photo-577210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    description: 'Digital business platform',
-    tags: ['React.tsx', 'Tailwind'],
-    caseStudyUrl: 'https://connect4collab.in',
+    title: 'Upride',
+    category: 'UI Redesign',
+    image: 'upride.png',
+    description: 'Redesigned the user interface for a modern and intuitive experience',
+    url: '/upride',
   },
   {
     id: '3',
-    title: 'Database Management System',
-    category: 'Database Management System',
-    image: 'https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    description: 'A secure database management system transiting data across many users',
-    tags: ['Django', 'React.jsx', 'PostgreSQL'],
-    caseStudyUrl: '',
+    title: 'Acer',
+    category: 'UI Redesign',
+    image: 'acer.png',
+    description: 'UI redesign for Acer’s product page to enhance user engagement',
+    url: '/acer',
   },
-  {
-    id: '4',
-    title: 'Enterprise Solution',
-    category: 'Enterprise Solution',
-    image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    description: '',
-    tags: ['React.jsx', 'Tailwindcss'],
-    caseStudyUrl: 'https://ririana.in',
-  },
+  // {
+  //   id: '4',
+  //   title: 'Maya Tours and Travels',
+  //   category: 'Tours and Travels',
+  //   image: 'https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  //   description: 'Tour and travel management platform with booking and itinerary features',
+  //   url: '/project4',
+  // },
+  // {
+  //   id: '5',
+  //   title: 'Organic Sikkim',
+  //   category: 'E-Commerce',
+  //   image: 'https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  //   description: 'E-Commerce platform for organic products with user-friendly interface',
+  //   url: '/project5',
+  // },
+  // {
+  //   id: '6',
+  //   title: 'Detan Finance',
+  //   category: 'Business Platform',
+  //   image: 'https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  //   description: 'A comprehensive dashboard for financial SIP and Mutual Funds data visualization',
+  //   url: '/project6',
+  // },
+  // {
+  //   id: '7',
+  //   title: 'Ririana Innovations',
+  //   category: 'Business Platform',
+  //   image: 'https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  //   description: 'A comprehensive dashboard for financial SIP and Mutual Funds data visualization',
+  //   url: '/project7',
+  // },
+  // {
+  //   id: '8',
+  //   title: 'Connect4Collab',
+  //   category: 'Business Platform',
+  //   image: 'https://images.pexels.com/photos/577210/pexels-photo-577210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  //   description: 'Digital business platform',
+  //   caseStudyUrl: 'https://connect4collab.in',
+  // },
 ];
 
 const categories = ['All', ...Array.from(new Set(projects.map(project => project.category)))];
 
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState('All');
-  const [activeProject, setActiveProject] = useState(null);
 
   const filteredProjects = activeCategory === 'All'
     ? projects
@@ -79,10 +106,10 @@ const Portfolio = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {filteredProjects.map(project => (
-            <div
+            <a
               key={project.id}
-              className="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:shadow-xl cursor-pointer"
-              onClick={() => setActiveProject(project)}
+              href={project.url}
+              className="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:shadow-xl block"
             >
               <div className="relative h-64 overflow-hidden">
                 <img
@@ -105,74 +132,10 @@ const Portfolio = () => {
                   <ExternalLink className="h-4 w-4" />
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
-
-      {activeProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm" onClick={() => setActiveProject(null)}>
-          <div
-            className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-auto"
-            onClick={e => e.stopPropagation()}
-          >
-            <div className="relative h-80">
-              <img
-                src={activeProject.image}
-                alt={activeProject.title}
-                className="w-full h-full object-cover"
-              />
-              <button
-                className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2 text-white hover:bg-white/40 transition-colors"
-                onClick={() => setActiveProject(null)}
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-
-            <div className="p-8">
-              <div className="flex items-center justify-between mb-6">
-                <h3 className="text-2xl font-bold text-gray-900">{activeProject.title}</h3>
-                <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">
-                  {activeProject.category}
-                </span>
-              </div>
-
-              <p className="text-gray-700 mb-6">{activeProject.description}</p>
-
-              <div className="mb-8">
-                <h4 className="text-lg font-semibold mb-3">Technologies Used</h4>
-                <div className="flex flex-wrap gap-2">
-                  {activeProject.tags.map((tag, index) => (
-                    <span
-                      key={index}
-                      className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              <div className="flex justify-end">
-                {activeProject.caseStudyUrl && (
-                  <a
-                    href={activeProject.caseStudyUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center gap-2"
-                  >
-                    View Project
-                    <ExternalLink className="h-4 w-4" />
-                  </a>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 };
