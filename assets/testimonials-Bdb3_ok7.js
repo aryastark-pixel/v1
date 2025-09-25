@@ -1,1 +1,0 @@
-import{e as s,j as e,f as r,B as t,H as o,F as a}from"./Footer-BfOyp6wk.js";import{T as i}from"./Testimonials-CoTRMJ8Z.js";s.createRoot(document.getElementById("root")).render(e.jsx(r.StrictMode,{children:e.jsxs(t,{children:[e.jsx(o,{}),e.jsx(i,{}),e.jsx(a,{})]})}));

@@ -1,0 +1,1 @@
+import"./modulepreload-polyfill-B5Qt9EMX.js";import{f as o,j as e,R as r,B as t,H as s,F as a}from"./Footer-DRHHh2g9.js";import{P as i}from"./Portfolio-BQEGg-ax.js";o.createRoot(document.getElementById("root")).render(e.jsx(r.StrictMode,{children:e.jsxs(t,{children:[e.jsx(s,{}),e.jsx(i,{}),e.jsx(a,{})]})}));
