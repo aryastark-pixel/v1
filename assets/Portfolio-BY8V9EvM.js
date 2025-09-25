@@ -1,4 +1,4 @@
-import{r as l,j as e}from"./chunk-B7RQU5TL-va1OIAcK.js";import{c as o}from"./Footer-Dzl28sqf.js";/**
+import{r as l,j as e}from"./chunk-B7RQU5TL-BJEFOacH.js";import{c as o}from"./Footer-CmHW_1Ge.js";/**
  * @license lucide-react v0.525.0 - ISC
  *
  * This source code is licensed under the ISC license.

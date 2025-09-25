@@ -1,4 +1,4 @@
-import"./modulepreload-polyfill-B5Qt9EMX.js";import{j as e,r as o,u as d,B as m,R as x,a,c as h}from"./chunk-B7RQU5TL-va1OIAcK.js";import{c as s,L as l,A as p,H as r,F as n,a as u,M as g}from"./Footer-Dzl28sqf.js";import{H as b,B as f,F as j}from"./FigmaModal-BpaklVdK.js";import{P as y}from"./Portfolio-hnPZ0UuW.js";import{A as v}from"./About-Budq9JUk.js";import{T as w}from"./Testimonials-QoacNv_C.js";import{C as N}from"./Contact-Pt3iqOjz.js";import{G as k,A as M}from"./PD2-JkOX2pNv.js";/**
+import"./modulepreload-polyfill-B5Qt9EMX.js";import{j as e,r as o,u as d,B as m,R as x,a,c as h}from"./chunk-B7RQU5TL-BJEFOacH.js";import{c as s,L as l,A as p,H as r,F as n,a as u,M as g}from"./Footer-CmHW_1Ge.js";import{H as b,B as f,F as j}from"./FigmaModal-DAmrANPQ.js";import{P as y}from"./Portfolio-BY8V9EvM.js";import{A as v}from"./About-BfyJUbh0.js";import{T as w}from"./Testimonials-cdGHIvof.js";import{C as N}from"./Contact-C9urd2_e.js";import{G as k,A as M}from"./PD2-HdjQDotK.js";/**
  * @license lucide-react v0.525.0 - ISC
  *
  * This source code is licensed under the ISC license.
