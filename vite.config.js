@@ -18,7 +18,9 @@ export default defineConfig({
         testimonials: resolve(__dirname, 'testimonials.html'),
         contact: resolve(__dirname, 'contact.html'),
         tss: resolve(__dirname, 'tss.html'),
-        pd: resolve(__dirname, 'portfolio_detail1.html'),
+        upride: resolve(__dirname, 'portfolio_detail1.html'),
+        acer: resolve(__dirname, 'portfolio_detail2.html'),
+        
       },
     },
   },   

@@ -10,7 +10,7 @@ import Team from './pages/Team';
 import Testimonials from './pages/Testimonials' ;
 import Contact from './pages/Contact';
 import PortfolioDetails from './pages/PortfolioDetails/PD1';
-import PD2 from './pages/PortfolioDetails/PD2'; //change this
+import AcerRedesign from './pages/PortfolioDetails/PD2'; //change this
 import Headerr from './pages/PortfolioDetails/PD3';
 function App() {
   useEffect(() => {
@@ -29,8 +29,10 @@ function App() {
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/tss" element={<TssApp />} />
-          <Route path="/upride" element={<PortfolioDetails />} />
-          <Route path="/acer" element={<PD2 />} />
+
+           {/* might need to change */}
+          <Route path="/upride" element={<PortfolioDetails />} /> 
+          <Route path="/acer" element={<AcerRedesign />} />
       
           {/* <Route path="/hms" element={<Headerr />} />  */}
 
