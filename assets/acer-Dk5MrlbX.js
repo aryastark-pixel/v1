@@ -1,1 +1,0 @@
-import"./modulepreload-polyfill-B5Qt9EMX.js";import{b as r,j as e,d as s,B as o}from"./chunk-B7RQU5TL-va1OIAcK.js";import{A as t}from"./PD2-JkOX2pNv.js";r.createRoot(document.getElementById("root")).render(e.jsx(s.StrictMode,{children:e.jsx(o,{children:e.jsxs("div",{className:"min-h-screen flex flex-col",children:[e.jsx(Header,{}),e.jsx(t,{}),e.jsx(Footer,{})]})})}));
