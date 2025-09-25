@@ -1,0 +1,1 @@
+import{b as o,j as e,d as r,B as s}from"./chunk-B7RQU5TL-BVsbrpPt.js";import{M as t}from"./PD1-DBOqgSNY.js";import"./GobackButton-CU1kNs86.js";o.createRoot(document.getElementById("root")).render(e.jsx(r.StrictMode,{children:e.jsx(s,{children:e.jsx("div",{className:"min-h-screen flex flex-col",children:e.jsx(t,{})})})}));
